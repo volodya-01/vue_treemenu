@@ -1,0 +1,20 @@
+$exportedValue: #ccc;
+$vw_base: 1920;
+$vh_base: 1080;
+$base_bgcolor1:red;
+$base_bgcolor2:green;
+$base_color1:red;
+$base_color2:green;
+
+@function vw($px) {
+  @return ($px / 1920) * 100vw;
+}
+
+@function vh($px) {
+  @return ($px /1080) * 100vh;
+}
+
+:export {
+  exportedKey: $exportedValue;
+  /* ... */
+}
